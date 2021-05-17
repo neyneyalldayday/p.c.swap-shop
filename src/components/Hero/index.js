@@ -77,15 +77,15 @@ const Hero = ({ slides }) => {
                             <HeroSlide key={index}>
                             {index === current && (
                              <HeroSlider>
-                             <HeroImage src={slides.image} 
-                             alt={slides.alt}
+                             <HeroImage src={slide.image} 
+                             alt={slide.alt}
                              initial='hidden'
                              animate='visible'
                              exit='exit'
                              variants={fadeAnimation}
                               />
                              <HeroContent>
-                                <h1 data-aos='fade-down' data-aos-duration='600'>{slides.title}</h1>
+                                <h1 data-aos='fade-down' data-aos-duration='600'>{slide.title}</h1>
                                 <Button
                                 data-aos='zoom-out'
                                 data-aos-duration='500'

@@ -64,7 +64,7 @@ top: 0;
 left: 0;
 width: 100vw;
 height: 100vh;
-object-fit: cover;
+object-fit: contain;
 `; 
 
 export const HeroContent= styled.div`
@@ -74,7 +74,7 @@ display: flex;
 flex-direction: column;
 max-width: 1600px;
 width: calc(100% - 100px);
-color: #fff;
+color: #FF00FF;
 
 h1 {
     font-size: clamp(1rem, 8vw, 2rem);
@@ -95,7 +95,7 @@ export const arrowButtons = css`
   height: 50px;
   color: #fff;
   cursor: pointer;
-  background: #000d1a;
+  background: #FF00FF;
   border-radius: 50px;
   padding: 10px;
   margin-right: 1rem;
