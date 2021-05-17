@@ -5,7 +5,7 @@ import { HeroData } from '../Data/HeroData'
 const Home = () => {
     return (
         <>
-          <Hero hero={ HeroData }/>  
+          <Hero slides={ HeroData }/>  
           
         </>
     )
