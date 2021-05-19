@@ -5,7 +5,7 @@ import { ArchiveData } from '../Data/ArchiveData'
 const Archive = () => {
     return (
         <div>
-           <PhotoArchive props={ArchiveData} /> 
+           <PhotoArchive images={ArchiveData} /> 
         </div>
     )
 }

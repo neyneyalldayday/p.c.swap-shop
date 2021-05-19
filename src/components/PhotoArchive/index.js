@@ -8,12 +8,16 @@ import {
 }
 from './PhotoArchiveElements'
 
+
+
 const PhotoArchive = () => {
+
+  
     return (
        
            <ImageContainer>
                <ImageGrid>
-                   <CardsImage >
+                   <CardsImage>
                         
                    </CardsImage>
                </ImageGrid>
