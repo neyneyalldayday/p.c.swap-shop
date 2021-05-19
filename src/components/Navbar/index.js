@@ -22,7 +22,7 @@ const Navbar = () => {
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>
-                        <NavLinks to="/images">images</NavLinks>
+                        <NavLinks to="/archive">Photo Archive</NavLinks>
                     </NavItem>
                     <NavItem>
                         <NavLinks to="/videos">videos</NavLinks>

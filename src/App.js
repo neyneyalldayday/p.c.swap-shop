@@ -4,6 +4,7 @@ import Home from './Pages/index'
 import { Switch, Route } from 'react-router-dom';
 import GlobalStyle from './globalStyles';
 import Footer from "./components/Footer";
+import PhotoArchive from "./components/PhotoArchive";
 
 
 
@@ -14,6 +15,7 @@ function App() {
    <Navbar />
    <Switch>
      <Route path="/" exact component={Home}/>
+     <Route path="/archive" component={PhotoArchive} />
    </Switch>
    <Footer />
     </>
