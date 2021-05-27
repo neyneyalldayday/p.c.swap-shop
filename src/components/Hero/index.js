@@ -5,8 +5,7 @@ import {
     HeroSlide,
     HeroSlider,
     HeroImage,
-    HeroContent,
-    Arrow,
+    HeroContent,  
     SliderButtons,
     PrevArrow,
     NextArrow
@@ -14,7 +13,7 @@ import {
 }
 from './HeroElements'
 import {  AnimatePresence } from 'framer-motion'
-import { Button } from '../Button/index';
+
 
 const Hero = ({ slides }) => {
     const [current, setCurrent] = useState(0);
@@ -86,19 +85,7 @@ const Hero = ({ slides }) => {
                               />
                              <HeroContent>
                                 <h1 data-aos='fade-down' data-aos-duration='600'>{slide.title}</h1>
-                                <Button
-                                data-aos='zoom-out'
-                                data-aos-duration='500'
-                                data-aos-delay='250'
-                                to={slide.path}
-                                primary='true'
-                                css={`
-                                  max-width: 160px;
-                                `}
-                                >
-                                    {slide.label}
-                                    <Arrow />
-                                </Button>
+                                
                             </HeroContent>
                      </HeroSlider>
                     )}
