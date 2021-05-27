@@ -5,6 +5,9 @@ import { Switch, Route } from 'react-router-dom';
 import GlobalStyle from './globalStyles';
 import Footer from "./components/Footer";
 import PhotoArchive from "./components/PhotoArchive";
+import VideoSpot from "./components/videos";
+import BuySell from "./components/BuySell";
+import Forums from "./components/Forums";
 
 
 
@@ -16,6 +19,9 @@ function App() {
    <Switch>
      <Route path="/" exact component={Home}/>
      <Route path="/archive" component={PhotoArchive} />
+     <Route path="/videopage" component={VideoSpot} />
+     <Route path="/buysellpage" component={BuySell} />
+     <Route path="/forumpage" component={Forums} />
    </Switch>
    <Footer />
     </>

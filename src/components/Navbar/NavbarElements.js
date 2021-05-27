@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-
+import {DiScala} from "react-icons/di"
 import { Link } from 'react-router-dom'
 
 
@@ -37,6 +37,11 @@ cursor: pointer;
 text-size: 1.5rem;
 display: flex;
 align-items: center;
+font-size: 1rem;
+
+@media screen and (max-width: 960px) {
+   display: none
+}
 `
 
 
@@ -54,6 +59,9 @@ display: none;
     cursor: pointer;
 }
 `
+export const NavIcon = styled(DiScala)`
+margin: 0 0.5rem 0 2rem;
+`;
 
 
 export const NavMenu = styled.ul`
