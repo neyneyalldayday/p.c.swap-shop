@@ -2,14 +2,14 @@ import React from 'react'
 import PhotoArchive from '../components/PhotoArchive'
 
 
-const Archive = () => {
+export default function Index() {
     const images = [
-        "image4.jpg",
-        "image5.jpg",
-        "image6.jpg",
-        "image7.jpg",
-        "image8.jpg",
-        "image9.jpg",
+        "../images/image4.jpg",
+        "../images/image5.jpg",
+        "../images/image6.jpg",
+        "../images/image7.jpg",
+        "../images/image8.jpg",
+        "../images/image9.jpg",
         ]
     return (
         <div>
@@ -17,5 +17,4 @@ const Archive = () => {
         </div>
     )
 }
-
-export default Archive
+    

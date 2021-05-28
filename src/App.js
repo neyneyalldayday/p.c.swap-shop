@@ -11,10 +11,11 @@ import Forums from "./components/Forums";
 
 
 
+
 function App() {
   return (
     <>
-    <GlobalStyle />
+   <GlobalStyle />
    <Navbar />
    <Switch>
      <Route path="/" exact component={Home}/>
