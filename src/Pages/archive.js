@@ -1,11 +1,19 @@
 import React from 'react'
 import PhotoArchive from '../components/PhotoArchive'
-import { ArchiveData } from '../Data/ArchiveData'
+
 
 const Archive = () => {
+    const images = [
+        "image4.jpg",
+        "image5.jpg",
+        "image6.jpg",
+        "image7.jpg",
+        "image8.jpg",
+        "image9.jpg",
+        ]
     return (
         <div>
-           <PhotoArchive images={ArchiveData} /> 
+           <PhotoArchive images={images} /> 
         </div>
     )
 }
