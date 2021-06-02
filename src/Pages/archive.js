@@ -1,21 +1,17 @@
 import React from 'react'
 import PhotoArchive from '../components/PhotoArchive'
+import { archiveData  }from '../Data/archiveData'
 
 
-export default function ArchivePage() {
-    const images = [
-        "../images/image4.jpg",
-        "../images/image5.jpg",
-        "../images/image6.jpg",
-        "../images/image7.jpg",
-        "../images/image8.jpg",
-        "../images/image9.jpg"
-        ]
+const ArchivePage = () => {
+    
 
     return (
-        <div>
-           <PhotoArchive images={images} /> 
-        </div>
+        <>
+           <PhotoArchive images={ archiveData } /> 
+        </>
     )
 }
+
+export default ArchivePage;
     

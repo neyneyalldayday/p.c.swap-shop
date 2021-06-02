@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import VisibilitySensor from 'react-visibility-sensor';
 
-export default function PhotoArchive({ images }) {
-    const [imagesShownArray, setImagesShownArray] = useState(
-        Array(images.length).fill(false)
-        
-    );
+export default function PhotoArchive({ images }) {  
+    const [imagesShownArray, setImagesShownArray] = useState(        
+        Array(images.length).fill(false) 
+        );
+     
     
 
     const imageVisibleChange = (index, isVisible) => {
