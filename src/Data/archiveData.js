@@ -7,7 +7,7 @@ import image8 from "../images/image8.jpg"
 import image9 from "../images/image9.jpg"
 
 
- const images = [
+ export const archiveData = [
     {
       image: image4,
       title: 'computers are tight'   
@@ -35,4 +35,4 @@ import image9 from "../images/image9.jpg"
    
    
     ]
-    export default images
+   

@@ -48,7 +48,7 @@ const Navbar = () => {
                        <NavLinks to="/">Home</NavLinks>
                     </NavItem>                  
                     <NavItem>
-                        <NavLinks to="/archive">Photo Archive</NavLinks>
+                        <NavLinks to="/archivepage">Photo Archive</NavLinks>
                     </NavItem>                   
                     <NavItem>
                         <NavLinks to="/videopage">videos</NavLinks>

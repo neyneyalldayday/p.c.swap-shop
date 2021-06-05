@@ -5,9 +5,9 @@ import { Switch, Route } from 'react-router-dom';
 import GlobalStyle from './globalStyles';
 import Footer from "./components/Footer";
 import VideoSpot from "./components/videos";
-import BuySell from "./components/BuySell";
 import Forums from "./components/Forums";
 import ArchivePage from "./Pages/archive";
+import BuySellPage from "./Pages/buysell";
 
 
 
@@ -24,9 +24,9 @@ function App() {
    <Navbar />
    <Switch>
      <Route path="/" exact component={Home}/>
-     <Route path="/archive" compontent={ArchivePage}   />
+     <Route path="/archivepage" compontent={ArchivePage}   />
      <Route path="/videopage" component={VideoSpot} />
-     <Route path="/buysellpage" component={BuySell} />
+     <Route path="/buysellpage" component={BuySellPage} />
      <Route path="/forumpage" component={Forums} />
    </Switch>
    <Footer />

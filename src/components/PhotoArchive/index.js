@@ -31,12 +31,15 @@ const PhotoArchive = ({ images }) => {
             offset={{ bottom: 80 }}
             onChange={(isVisible) => imageVisibleChange(index, isVisible)}
             >
+                
                 <PhotoArchiveCard
                 images={images.image}
                 show={imagesShownArray[index]}
                 />
             </VisibilitySensor>
         ))}
+
+        
         </div>      
      );
 }

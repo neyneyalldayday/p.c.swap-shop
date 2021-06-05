@@ -5,6 +5,7 @@ const BuySellPage = () => {
     return (
         <div>
             <BuySell />
+            
         </div>
     )
 }
