@@ -32,7 +32,7 @@ const PhotoArchive = ({ images }) => {
             onChange={(isVisible) => imageVisibleChange(index, isVisible)}
             >
                 <PhotoArchiveCard
-                imageUrl={images}
+                images={images.image}
                 show={imagesShownArray[index]}
                 />
             </VisibilitySensor>

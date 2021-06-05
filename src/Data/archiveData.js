@@ -7,7 +7,7 @@ import image8 from "../images/image8.jpg"
 import image9 from "../images/image9.jpg"
 
 
-export const images = [
+ const images = [
     {
       image: image4,
       title: 'computers are tight'   
@@ -35,3 +35,4 @@ export const images = [
    
    
     ]
+    export default images

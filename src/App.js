@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import VideoSpot from "./components/videos";
 import BuySell from "./components/BuySell";
 import Forums from "./components/Forums";
+import ArchivePage from "./Pages/archive";
 
 
 
@@ -23,7 +24,7 @@ function App() {
    <Navbar />
    <Switch>
      <Route path="/" exact component={Home}/>
-     <Route path="/archive"   />
+     <Route path="/archive" compontent={ArchivePage}   />
      <Route path="/videopage" component={VideoSpot} />
      <Route path="/buysellpage" component={BuySell} />
      <Route path="/forumpage" component={Forums} />
