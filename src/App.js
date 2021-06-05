@@ -6,7 +6,7 @@ import GlobalStyle from './globalStyles';
 import Footer from "./components/Footer";
 import VideoSpot from "./components/videos";
 import Forums from "./components/Forums";
-import ArchivePage from "./Pages/archive";
+import ArchivePage from "./Pages/archivepage";
 import BuySellPage from "./Pages/buysell";
 
 
@@ -24,7 +24,7 @@ function App() {
    <Navbar />
    <Switch>
      <Route path="/" exact component={Home}/>
-     <Route path="/archivepage" compontent={ArchivePage}   />
+     <Route path="/archivepage" component={ArchivePage}   />
      <Route path="/videopage" component={VideoSpot} />
      <Route path="/buysellpage" component={BuySellPage} />
      <Route path="/forumpage" component={Forums} />

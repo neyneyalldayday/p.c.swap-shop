@@ -1,8 +1,10 @@
 import React from 'react';
 
 
+
+
 const PhotoArchiveCard = ({ images, show }) => {
-    console.log(images)
+    
     return (
         <div
         className={`relative transition ease-in duration-300 transform ${
@@ -15,7 +17,7 @@ const PhotoArchiveCard = ({ images, show }) => {
                 photos
             </div>
             </div>
-            <img src={images.image} alt=""/>
+            <img src={images} alt=""/>
         </div>
     )
     

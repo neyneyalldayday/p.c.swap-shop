@@ -7,11 +7,9 @@ const ArchivePage = () => {
     
 
     return (
-        <> 
-        
-           <PhotoArchive  images={ archiveData }  /> 
-    
-        </>
+        <div>        
+           <PhotoArchive  images={ archiveData }  />    
+        </div>
     )
 }
 
