@@ -1,6 +1,6 @@
 import React from 'react'
 import PhotoArchive from '../components/PhotoArchive'
-import archiveData from '../Data/archiveData'
+import images from '../Data/archiveData'
 
 
 const ArchivePage = () => {
@@ -8,7 +8,7 @@ const ArchivePage = () => {
 
     return (
         <>
-           <PhotoArchive images={ archiveData }  /> 
+           <PhotoArchive  images={ images }  /> 
         </>
     )
 }

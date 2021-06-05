@@ -7,7 +7,8 @@ import Footer from "./components/Footer";
 import VideoSpot from "./components/videos";
 import BuySell from "./components/BuySell";
 import Forums from "./components/Forums";
-import PhotoArchive from "./components/PhotoArchive";
+
+
 
 
 
@@ -22,7 +23,7 @@ function App() {
    <Navbar />
    <Switch>
      <Route path="/" exact component={Home}/>
-     <Route path="/archive" render={(archiveData) => <PhotoArchive images={archiveData} />}   />
+     <Route path="/archive"   />
      <Route path="/videopage" component={VideoSpot} />
      <Route path="/buysellpage" component={BuySell} />
      <Route path="/forumpage" component={Forums} />

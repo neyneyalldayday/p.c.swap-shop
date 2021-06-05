@@ -24,7 +24,7 @@ const PhotoArchive = ({ images }) => {
     return (
         <div className="grid grid-cols-2 gap-1">
         {images &&
-        images.map((imageUrl, index) => (
+        images.map((images, index) => (
             <VisibilitySensor
             key={index}
             partialVisibility={true}
@@ -32,7 +32,7 @@ const PhotoArchive = ({ images }) => {
             onChange={(isVisible) => imageVisibleChange(index, isVisible)}
             >
                 <PhotoArchiveCard
-                imageUrl={imageUrl}
+                imageUrl={images}
                 show={imagesShownArray[index]}
                 />
             </VisibilitySensor>
