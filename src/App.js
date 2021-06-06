@@ -8,6 +8,9 @@ import VideoSpot from "./components/videos";
 import ArchivePage from "./Pages/archivepage";
 import BuySellPage from "./Pages/buysell";
 import ForumPage from "./Pages/forumpage";
+import socketClient from "socket.io-client"
+
+const SERVER = "http://127.0.0.1:8080";
 
 
 
@@ -18,6 +21,10 @@ import ForumPage from "./Pages/forumpage";
 
 
 function App() {
+  const socket = socketClient (SERVER);
+        socket.on('connection', () => {
+          console.log(`I'm connected to the back-end`)
+        });
   return (
     <>
    <GlobalStyle />
