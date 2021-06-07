@@ -4,7 +4,7 @@ const cors = require("cors");
 const http = require("http");
 const socketIO = require("socket.io");
 const mongoose = require("mongoose")
-const PORT = 3030;
+const PORT = process.env.PORT || 3030;
 const NEW_MESSAGE_EVENT = "new-message-event";
 
 const app = express();
