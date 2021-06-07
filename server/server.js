@@ -22,11 +22,11 @@ const room = "general"
 
 
 
-var dbUrl = 'mongodb+srv://neyneyalldayday:FrankY242424!@cluster0.dbld7.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+const dbUrl = 'mongodb+srv://neyneyalldayday:FrankY242424!@cluster0.dbld7.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 
 
 
-var Message = mongoose.model('Message', {
+const Message = mongoose.model('Message', {
 
     name : String,
     message: String

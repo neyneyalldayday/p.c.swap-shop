@@ -8,6 +8,7 @@ import VideoSpot from "./components/videos";
 import ArchivePage from "./Pages/archivepage";
 import BuySellPage from "./Pages/buysell";
 import ForumPage from "./Pages/forumpage";
+import loginPage from "./Pages/loginPage";
 
 
 
@@ -28,6 +29,7 @@ function App() {
    <Navbar />
    <Switch>
      <Route path="/" exact component={Home}/>
+     <Route path="/login" component={loginPage}   />
      <Route path="/archivepage" component={ArchivePage}   />
      <Route path="/videopage" component={VideoSpot} />
      <Route path="/buysellpage" component={BuySellPage} />
