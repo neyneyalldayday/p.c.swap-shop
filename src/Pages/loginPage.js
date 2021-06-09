@@ -1,12 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Login from '../components/Login'
 
-const loginPage = () => {
+const LoginPage = () => {
+
+    const [id, setId ] = useState()
+
     return (
         <div>
-            <Login />
+            {id}
+           <Login onIdSubmit={setId} /> 
         </div>
     )
 }
 
-export default loginPage
+export default LoginPage
