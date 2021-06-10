@@ -8,8 +8,9 @@ export default function Login({ onIdSubmit }) {
         e.preventDefault()
 
         onIdSubmit(idRef.current)
-        console.log(idRef)
+        
     }
+    console.log(idRef.current)
 
 
     return (

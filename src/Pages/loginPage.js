@@ -6,10 +6,10 @@ const LoginPage = () => {
     const [id, setId ] = useState()
 
     return (
-        <div>
+        <>
             {id}
            <Login onIdSubmit={setId} /> 
-        </div>
+        </>
     )
 }
 
