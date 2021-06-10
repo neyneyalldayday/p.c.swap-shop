@@ -1,13 +1,14 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Login from '../components/Login'
+import useLocalStorage from '../hooks/useLocalStorage'
 
 const LoginPage = () => {
 
-    const [id, setId ] = useState()
+    const [id, setId ] = useLocalStorage('id')
 
     return (
         <>
-            {id}
+           {id}
            <Login onIdSubmit={setId} /> 
         </>
     )

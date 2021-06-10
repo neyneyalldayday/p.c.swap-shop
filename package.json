@@ -24,6 +24,7 @@
     "socket.io-client": "^4.1.2",
     "styled-components": "^5.2.3",
     "tailwind": "^4.0.0",
+    "uuid": "^8.3.2",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
