@@ -9,19 +9,23 @@ export default function Sidebar({id}) {
     const [activeKey, setActiveKey] = useState(CONVERSATIONS_KEY)
     const conversationsOpen = activeKey === CONVERSATIONS_KEY
 
+    const toggleTab = (index) => {
+        setActiveKey(index);
+    }
+
     return (
         <div style={{width: '250px'}} >            
             <div activeKey={activeKey} onSelect={setActiveKey}>
             <nav  className="flex flex-col sm:flex-row space-x-4 ">                   
-                <button eventKey={CONVERSATIONS_KEY}>conversations</button>                    
-                <button  eventKey={CONTACTS_KEY}>contacts</button>                                    
+                <button className={activeKey === CONVERSATIONS_KEY} onClick={() => toggleTab(CONVERSATIONS_KEY)}>conversations</button>                    
+                <button  className={activeKey === CONTACTS_KEY} onClick={() => toggleTab(CONTACTS_KEY)}>contacts</button>                                    
             </nav>
             </div>
             <div className="border-2 md:border-t-4 flex-grow overflow-auto">
-                <div eventKey={CONVERSATIONS_KEY}>
+                <div className={activeKey === CONVERSATIONS_KEY ?  'conversations' : 'invisible'} >
                     <Conversations/>
                 </div>
-                <div eventKey={CONTACTS_KEY}>
+                <div className={activeKey === CONTACTS_KEY ? 'contacts' : 'invisible' } >
                     <Contacts/>
                 </div>
             </div>
