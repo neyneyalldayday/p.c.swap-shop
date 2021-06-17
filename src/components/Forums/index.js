@@ -1,9 +1,10 @@
 import React, {useRef, useState, useEffect} from 'react'
 import useForum from "./useForum"
+import Sidebar from "../Sidebar"
 
 
 
-const Forums = () => {
+export default function Forums({id})  {
 
     const { messages, sendMessage } = useForum();
     const [newMessage, setNewMessage] = useState("");   
@@ -39,8 +40,9 @@ const Forums = () => {
 
 
     return (
-        <div className="md:container md:mx-auto h-screen  bg-indigo-50 rounded-md pt-5 ">
-           <div className="space-y-3  ">
+        <div className="md:container md:mx-auto h-screen  bg-indigo-50 rounded-md pt-5 flex space-x-4 "> 
+        <Sidebar id={id} />           
+           <div className="space-y-3 ">               
               <span className=" block decoration-clone md:decoration-slice bg-gradient-to-b from-purple-400 to-indigo-600 text-pink-300 flex justify-center h-48 max-h-full md:max-h-screen text-6xl antialiased sm:subpixel-antialiased md:antialiased font-semibold md:font-black tracking-tight md:tracking-normal rounded-md shadow-xl pt-5 pl-10 lg:pt-12  ">chat about computers</span>              
               <span className="block shadow-inner flex flex-col justify-center  h-32 max-h-full md:max-h-screen max-w-full md:max-w-screen bg-indigo-100 rounded-md text-pink-300 text-4xl antialiased sm:subpixel-antialiased md:antialiased font-semibold md:font-black tracking-tight md:tracking-normal  ">
                 <h1 className="flex justify-center">comment</h1>            
@@ -67,7 +69,7 @@ const Forums = () => {
                          <span>{idRef.body}</span>
                      </li>
                  ))}
-                 </ol>
+                 </ol>                 
                  <div ref={messageRef}></div>                             
              </span> 
                   
@@ -75,4 +77,4 @@ const Forums = () => {
     )
 }
 
-export default Forums
+

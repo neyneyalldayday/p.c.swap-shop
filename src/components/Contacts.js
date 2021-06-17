@@ -1,10 +1,9 @@
 import React from 'react'
 
-export default function Dashboard({ id }) {
+export default function Contacts() {
     return (
         <div>
-           {id}            
+            in da trash can
         </div>
     )
 }
-

@@ -3,7 +3,7 @@ import Forums from '../components/Forums'
 
 const ForumPage = () => {
     return (
-        <div>
+        <div>            
             <Forums />
         </div>
     )
