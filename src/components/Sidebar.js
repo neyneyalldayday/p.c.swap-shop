@@ -22,7 +22,7 @@ export default function Sidebar({id}) {
             </nav>
             </div>
             <div className="border-2 md:border-t-4 flex-grow overflow-auto">
-                <div className={activeKey === CONVERSATIONS_KEY ?  'conversations' : 'invisible'} >
+                <div className={activeKey === CONVERSATIONS_KEY ?  'conversations' : 'invisible'}>
                     <Conversations/>
                 </div>
                 <div className={activeKey === CONTACTS_KEY ? 'contacts' : 'invisible' } >
@@ -30,7 +30,7 @@ export default function Sidebar({id}) {
                 </div>
             </div>
             <div>
-                Your Id:<span className="text-extralight">{id}</span>
+                Your Id:<span className="text-extralight visible">{id}</span>
             </div>
             <button>
                 New {conversationsOpen ? 'Conversation' : 'Contact'}

@@ -25,7 +25,7 @@ const Footer = () => {
           <SocialMediaWrap>
               <SocialLogo to="/">
                   <SocialIcon />
-                  P.C Swap Shop
+                  P.C Swap Shop!
               </SocialLogo>
               <WebsiteRights>PCSS/{new Date().getFullYear()}</WebsiteRights>
               <SocialIcons>
