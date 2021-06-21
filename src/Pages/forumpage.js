@@ -1,10 +1,12 @@
 import React from 'react'
 import Forums from '../components/Forums'
+import Sidebar from '../components/Sidebar'
 
-const ForumPage = () => {
+const ForumPage = ({id}) => {
     return (
-        <div>            
-            <Forums />
+        <div> 
+            <Sidebar id={id}  />            
+            <Forums  />
         </div>
     )
 }

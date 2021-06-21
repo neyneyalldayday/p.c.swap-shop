@@ -1,13 +1,16 @@
 import React, {useRef, useState, useEffect} from 'react'
 import useForum from "./useForum"
-import Sidebar from "../Sidebar"
 
 
 
-export default function Forums({id})  {
+
+
+export default function Forums()  {
 
     const { messages, sendMessage } = useForum();
-    const [newMessage, setNewMessage] = useState("");   
+    const [newMessage, setNewMessage] = useState(""); 
+    
+   
     
     const idRef = useRef()
     const messageRef = useRef()
@@ -40,12 +43,11 @@ export default function Forums({id})  {
 
 
     return (
-        <div className="md:container md:mx-auto h-screen  bg-indigo-50 rounded-md pt-5 flex space-x-4 "> 
-        <Sidebar id={id} />           
+        <div className="md:container md:mx-auto h-screen  bg-indigo-50 rounded-md pt-5  space-x-4 ">                 
            <div className="space-y-3 ">               
               <span className=" block decoration-clone md:decoration-slice bg-gradient-to-b from-purple-400 to-indigo-600 text-pink-300 flex justify-center h-48 max-h-full md:max-h-screen text-6xl antialiased sm:subpixel-antialiased md:antialiased font-semibold md:font-black tracking-tight md:tracking-normal rounded-md shadow-xl pt-5 pl-10 lg:pt-12  ">chat about computers</span>              
               <span className="block shadow-inner flex flex-col justify-center  h-32 max-h-full md:max-h-screen max-w-full md:max-w-screen bg-indigo-100 rounded-md text-pink-300 text-4xl antialiased sm:subpixel-antialiased md:antialiased font-semibold md:font-black tracking-tight md:tracking-normal  ">
-                <h1 className="flex justify-center">comment</h1>            
+                <h1 className="flex justify-center">Public comment</h1>            
                 <textarea className=" table-row-group m-1 flex justify-center text-sm  bg-yellow-50"
                      id="message"
                      label="Message"
@@ -61,6 +63,7 @@ export default function Forums({id})  {
               </span>                           
            </div>
            <br></br>
+           
              <span className=" block shadow-inner flex flex-col justify-center  h-32 max-h-full md:max-h-screen max-w-full md:max-w-screen bg-indigo-100 rounded-md text-pink-300 text-4xl antialiased sm:subpixel-antialiased md:antialiased font-semibold md:font-black tracking-tight md:tracking-normal">
                  <ol className="block text-sm">
                  {messages.map((message, i) => (
