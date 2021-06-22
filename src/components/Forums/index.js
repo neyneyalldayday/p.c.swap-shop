@@ -5,7 +5,7 @@ import useForum from "./useForum"
 
 
 
-export default function Forums()  {
+export default function Forums({id})  {
 
     const { messages, sendMessage } = useForum();
     const [newMessage, setNewMessage] = useState(""); 
@@ -67,7 +67,10 @@ export default function Forums()  {
              <span className=" block shadow-inner flex flex-col justify-center  h-32 max-h-full md:max-h-screen max-w-full md:max-w-screen bg-indigo-100 rounded-md text-pink-300 text-4xl antialiased sm:subpixel-antialiased md:antialiased font-semibold md:font-black tracking-tight md:tracking-normal">
                  <ol className="block text-sm">
                  {messages.map((message, i) => (
-                     <li key={i}>                         
+                     <li key={i}>
+                         <div className="border-2 md:border-t-4    justify-center  h-12  max-w-full md:max-w-screen bg-indigo-100 rounded-md text-pink-300 text-sm antialiased sm:subpixel-antialiased md:antialiased font-semibold md:font-black tracking-tight md:tracking-normal">
+                           Your Id:<span className="text-extralight visible">{id}</span>
+                         </div>                                                 
                          <span>{message.body}</span>
                          <span>{idRef.body}</span>
                      </li>
