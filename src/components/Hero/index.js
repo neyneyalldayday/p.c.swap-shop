@@ -69,7 +69,9 @@ const Hero = ({ slides, id }) => {
     return (
         <>
          <HeroSection>
-             Your id:<span className="text-extralight visible">{id}</span>
+                <div className="border-2 md:border-t-4    justify-center  h-6  max-w-full md:max-w-screen bg-indigo-100  text-pink-300 text-sm antialiased sm:subpixel-antialiased md:antialiased font-semibold md:font-black tracking-tight md:tracking-normal">
+               Your Id:<span className="text-extralight visible">{id}</span>
+                </div>                                                 
              <HeroWrapper>
                  <AnimatePresence>
                      {slides.map((slide, index) => {
