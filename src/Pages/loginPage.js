@@ -1,7 +1,7 @@
 import React from 'react'
 import Login from '../components/Login'
 import useLocalStorage from '../hooks/useLocalStorage'
-import ForumPage from './forumpage'
+import Home from '../Pages/index'
 
 
 
@@ -11,7 +11,7 @@ const LoginPage = () => {
 
     return (
         
-           id ? <ForumPage id={id} /> : <Login onIdSubmit={setId} /> 
+           id ? <Home id={id} /> : <Login onIdSubmit={setId} /> 
            
         
     )

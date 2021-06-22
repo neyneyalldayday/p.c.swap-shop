@@ -2,10 +2,10 @@ import React from 'react'
 import Hero from '../components/Hero'
 import { HeroData } from '../Data/HeroData'
 
-const Home = () => {
+const Home = ({id}) => {
     return (
         <>
-          <Hero slides={ HeroData }/>  
+          <Hero id={id} slides={ HeroData }/>  
           
         </>
     )

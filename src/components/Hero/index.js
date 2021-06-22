@@ -15,7 +15,7 @@ from './HeroElements'
 import {  AnimatePresence } from 'framer-motion'
 
 
-const Hero = ({ slides }) => {
+const Hero = ({ slides, id }) => {
     const [current, setCurrent] = useState(0);
     const length = slides.length;
     const timeout = useRef(null);
@@ -69,6 +69,7 @@ const Hero = ({ slides }) => {
     return (
         <>
          <HeroSection>
+             Your id:<span className="text-extralight visible">{id}</span>
              <HeroWrapper>
                  <AnimatePresence>
                      {slides.map((slide, index) => {
