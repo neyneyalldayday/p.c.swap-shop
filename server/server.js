@@ -15,6 +15,8 @@ const io = socketIO(server, {
     origins:["localhost:3000"]
 });
 
+
+
 app.use(cors());
 
 const room = "general"
