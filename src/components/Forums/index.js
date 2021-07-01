@@ -47,7 +47,7 @@ export default function Forums({id})  {
            <div className="space-y-3 ">               
               <span className=" block decoration-clone md:decoration-slice bg-gradient-to-b from-purple-400 to-indigo-600 text-pink-300 flex justify-center h-48 max-h-full md:max-h-screen text-6xl antialiased sm:subpixel-antialiased md:antialiased font-semibold md:font-black tracking-tight md:tracking-normal rounded-md shadow-xl pt-5 pl-10 lg:pt-12  ">chat about computers</span>              
               <span className="block shadow-inner flex flex-col justify-center  h-32 max-h-full md:max-h-screen max-w-full md:max-w-screen bg-indigo-100 rounded-md text-pink-300 text-4xl antialiased sm:subpixel-antialiased md:antialiased font-semibold md:font-black tracking-tight md:tracking-normal  ">
-                <h1 className="flex justify-center">Public comment</h1>            
+                <h1 className="flex justify-center">Public Comment</h1>            
                 <textarea className=" table-row-group m-1 flex justify-center text-sm  bg-yellow-50"
                      id="message"
                      label="Message"
