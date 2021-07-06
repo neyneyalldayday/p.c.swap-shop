@@ -7,7 +7,8 @@ const ArchivePage = () => {
     
 
     return (
-        <div>        
+        <div> 
+            bunch of photos       
            <PhotoArchive  images={ archiveData }  />    
         </div>
     )

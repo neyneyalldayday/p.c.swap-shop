@@ -34,9 +34,6 @@ const useForum = () => {
     };
 
     return {messages, sendMessage};
-    
-
-
 };
 
 export default useForum;
