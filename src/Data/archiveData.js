@@ -10,7 +10,7 @@ import image9 from "../images/image9.jpg"
  export const archiveData = [
     {
       image: image4,
-      title: 'computers are tight'   
+      title: 'computers are tight daggy'   
     },
     {
       image: image5,
