@@ -9,7 +9,7 @@ height: 100vh;
 max-height: 1100px;
 position: relative;
 overflow: hidden;
-background:  #cd799f;
+background:  #FFFFFF;
 `;
 
 

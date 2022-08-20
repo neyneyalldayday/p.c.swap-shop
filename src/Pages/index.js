@@ -2,11 +2,11 @@ import React from 'react'
 import Hero from '../components/Hero'
 import { HeroData } from '../Data/HeroData'
 
-const Home = ({id}) => {
+const Home = () => {
  
     return (
         <>
-          <Hero id={id} slides={ HeroData }/>  
+          <Hero  slides={ HeroData }/>  
           
         </>
     )
