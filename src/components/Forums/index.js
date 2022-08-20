@@ -2,20 +2,13 @@ import React, {useRef, useState, useEffect} from 'react'
 import useForum from "./useForum"
 
 
-
-
-
 export default function Forums({id})  {
 
     const { messages, sendMessage } = useForum();
-    const [newMessage, setNewMessage] = useState(""); 
-    
-   
+    const [newMessage, setNewMessage] = useState("");   
     
     const idRef = useRef()
-    const messageRef = useRef()
-
-    
+    const messageRef = useRef()    
 
     const handleNewMessageChange = event => {
         setNewMessage(event.target.value);
@@ -26,9 +19,7 @@ export default function Forums({id})  {
             sendMessage(newMessage);
             setNewMessage("");
         }
-    };
-
-    
+    };    
 
     const handleKeyUp = event => {
         if (event.key === "Enter"){
@@ -38,8 +29,7 @@ export default function Forums({id})  {
             }
         }
     }
-
-    useEffect(() => messageRef.current.scrollIntoView({behavior: "smooth"}))
+    useEffect(() => messageRef.current.scrollIntoView({behavior: "smooth"}), [])
 
 
     return (
